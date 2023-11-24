@@ -130,8 +130,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('data', default="./p_data/photos/")
     parser.add_argument('-df', '--detect_face', action="store_true", default=True, help='detect face')
-    #parser.add_argument('-d', '--data', default="./p_data/photos/")
-    parser.add_argument('-m', '--trained_model', default='./Pytorch_Retinaface/weights/Resnet50_Final.pth',
+    parser.add_argument('-m', '--trained_model', default='./pretrained_models/Resnet50_Final.pth',
                     type=str, help='Trained state_dict file path to open')
     parser.add_argument('--network', default='resnet50', help='Backbone network mobile0.25 or resnet50')
     parser.add_argument('--save_folder', default='./p_data/pred/', type=str, help='Dir to save txt results')
