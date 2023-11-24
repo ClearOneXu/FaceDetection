@@ -128,8 +128,9 @@ def calculate_precision_recall_f1(pred_bboxes, gt_bboxes, iou_threshold=0.5):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('data', default="./p_data/photos/")
     parser.add_argument('-df', '--detect_face', action="store_true", default=True, help='detect face')
-    parser.add_argument('-d', '--data', default="./p_data/photos/")
+    #parser.add_argument('-d', '--data', default="./p_data/photos/")
     parser.add_argument('-m', '--trained_model', default='./Pytorch_Retinaface/weights/Resnet50_Final.pth',
                     type=str, help='Trained state_dict file path to open')
     parser.add_argument('--network', default='resnet50', help='Backbone network mobile0.25 or resnet50')
