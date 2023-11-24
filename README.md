@@ -55,3 +55,6 @@ Average Precision (AP) with IoU threshold 0.5: 0.7250
 ```Shell
 python detect_unitest.py
 ```
+
+## Note.pdf
+A separate note briefly explaining challenges, thought processes and justification for technical choices.
