@@ -151,7 +151,7 @@ if __name__ == '__main__':
 
     if args.detect_face:
         sys.path.append('./Pytorch_Retinaface/')
-        from Pytorch_Retinaface.detect import detect_face
+        from detect_face import detect_face
         detect_face(args)
     
     if args.eval:
